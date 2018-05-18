@@ -38,6 +38,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Long Snackbar"/>
+    <Button
+        android:id="@+id/dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialogue"/>
 
   </LinearLayout>
 

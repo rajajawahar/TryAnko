@@ -4,12 +4,14 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.button
 import kotlinx.android.synthetic.main.activity_main.coordinatorLayout
+import kotlinx.android.synthetic.main.activity_main.dialogue
 import kotlinx.android.synthetic.main.activity_main.longToast
 import kotlinx.android.synthetic.main.activity_main.longsnackbar
 import kotlinx.android.synthetic.main.activity_main.snackbar
 import org.jetbrains.anko.design.longSnackbar
 import org.jetbrains.anko.design.snackbar
 import org.jetbrains.anko.longToast
+import org.jetbrains.anko.selector
 import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +31,12 @@ class MainActivity : AppCompatActivity() {
     }
     longsnackbar.setOnClickListener {
       longSnackbar(coordinatorLayout, "Long Snackbar")
+    }
+    dialogue.setOnClickListener {
+      val options = listOf("Option 1", "Option 2", "Option 4")
+      selector("Select an option", options) { dialogInterface, i ->
+        toast("You selected ${options[i]}")
+      }
     }
 
   }
