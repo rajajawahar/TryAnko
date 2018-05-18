@@ -44,6 +44,18 @@
         android:layout_height="wrap_content"
         android:text="Dialogue"/>
 
+    <Button
+        android:id="@+id/alert_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert"/>
+
+    <Button
+        android:id="@+id/progress_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress"/>
+
   </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
